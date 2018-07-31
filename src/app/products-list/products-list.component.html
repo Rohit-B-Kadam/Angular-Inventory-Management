@@ -1,0 +1,4 @@
+<div *ngFor="let product of productList; let i=index">
+  <app-product-row [product]="product" (selectedProduct)="clicked($event)" >
+  </app-product-row>
+</div>

@@ -1,0 +1,40 @@
+<div class="card Highlight" style="margin:2em">
+  <div class="card-body">
+    <div class="row align-items-start">
+      <!--Image column-->
+      <div class="col-sm-3">
+        <app-product-image [product]="product"></app-product-image>
+      </div>
+
+      <!-- Product Detail Column-->
+      <div class="col-sm-6">
+        <!-- Product Name Row-->
+        <div class="row header">
+          <h3 class="card-title">{{ product.name }}</h3>
+        </div>
+        <!-- Product SKU Row-->
+        <div class="row mystyle">
+          <p class="card-text container">
+            SKU #{{ product.sku }}
+          </p>
+        </div>
+        <!-- Product Department Row-->
+        <div class="row mystyle">
+          <app-product-department [product]="product"></app-product-department>
+        </div>
+
+      </div>
+
+      <!--Product Price Column-->
+      <div class="col-sm-3">
+        <div class="row container">
+          <app-price-display [price]="product.price"></app-price-display>
+        </div>
+        <div class="row container">
+          <button type="button" class="btn btn-primary btn-lg " (click)="addToCart()">Add To Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
