@@ -24,11 +24,13 @@ Products/Product list
 
 ## The Product List Component
 
-we wiil break the Product into Three Component:
+ProductList Component create one ProductRow Component for every Product
 
-- the Product Image component would be responsible for rendering a product image, given its image name
-- the Product Department component would render the department tree, like Men > Shoes > Running Shoes
-- the Price Display component would render the price.
+ProductRowComponent will break the Product into Three Component:
+
+- the Product Image component: would be responsible for rendering a product image, given its image name
+- the Product Department component: would render the department tree, like Men > Shoes > Running Shoes
+- the Price Display component: would render the price.
 
 ---
 
@@ -44,3 +46,7 @@ we wiil break the Product into Three Component:
 ## Model
 
 - Product Model: it’s just a model that we’ll use in our app to store each product detail.
+
+---
+
+[Live preview](https://inventory-management-arulqajmka.now.sh)
