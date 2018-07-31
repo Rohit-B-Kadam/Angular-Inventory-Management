@@ -12,10 +12,12 @@ export class AppComponent {
   public products: Product[];
   public shoppingList:Product[];
   public showCart:boolean;
+
+  
   constructor() {
 
     this.showCart = false;
-    
+
     this.products =
       [
         new Product(

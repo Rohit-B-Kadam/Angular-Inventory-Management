@@ -9,6 +9,8 @@ import { ProductDepartmentComponent } from './product-department/product-departm
 import { PriceDisplayComponent } from './price-display/price-display.component';
 import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
 
+
+
 @NgModule({
   declarations: [
     AppComponent,
